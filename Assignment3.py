@@ -20,8 +20,6 @@ import re
 
 def longest_words(file):
     try:
-        if not isinstance(file,str):
-            return "invalid input detected"
         with open(file, 'r') as f:
             words = f.read().strip()
             fixed = re.sub('\W+',' ', words)
